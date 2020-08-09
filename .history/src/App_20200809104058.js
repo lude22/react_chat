@@ -1,0 +1,45 @@
+//---import js---
+import React, {Component} from 'react';
+import Room from './components/room/Room.js'
+import { BrowserRouter, Route, Link } from 'react-router-dom';
+
+//---import css---
+import './App.css';
+
+const Room = () => {
+  return(
+    <div>
+      Room
+      <Link to="/Room">
+        <button>
+          show
+        </button>
+      </Link>
+    </div>
+  )
+}
+
+const App = () =>{
+  return (
+    <div>
+      <BrowserRouter>
+        <div>
+          <Router path ="/" exact component={RoomList} />
+          <Router path ="/Room" exact component={Room} />
+        </div>
+      </BrowserRouter>
+    </div>
+  )
+}
+
+class App extends Component{
+  render(){
+    return(
+      <React.Fragment>
+        <Room />
+      </React.Fragment>
+    )
+  }
+}
+
+export default App;

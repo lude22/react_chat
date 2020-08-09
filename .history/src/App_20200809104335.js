@@ -1,7 +1,6 @@
 //---import js---
 import React, {Component} from 'react';
 import Room from './components/room/Room.js'
-import RoomMenu from './components/roommenu/RoomMenu.js'
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 
 //---import css---
@@ -12,8 +11,8 @@ const App = () =>{
     <div>
       <BrowserRouter>
         <div>
-          <Route path ="/" exact component={RoomMenu} />
-          <Route path ="/room/mokumoku" exact component={Room} />
+          <Route path ="/" exact component={RoomList} />
+          <Route path ="/Room" exact component={Room} />
         </div>
       </BrowserRouter>
     </div>
