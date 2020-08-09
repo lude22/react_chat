@@ -12,10 +12,10 @@ class App extends Component{
     return(
       <React.Fragment>
         <ButtonAppSearchBar />
+        <InputField />
         <div classname="ChatList">
           <ChatList />
         </div>
-        <InputField />
       </React.Fragment>
     )
   }

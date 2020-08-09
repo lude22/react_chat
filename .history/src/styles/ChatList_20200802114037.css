@@ -1,0 +1,29 @@
+.ChatList{
+    margin: 0 auto;
+    max-width: 500px;
+  }
+
+  @media screen and (max-width:520px) { 
+    /*　画面サイズが520pxからはここを読み込む　*/
+    .ChatList{
+      margin: 0 20px;
+    }
+  }
+  
+  .ChatList ul {
+    margin: 10px auto;
+  }
+  
+  .ChatList ul li {
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .ChatList ul .MuiDivider-inset{
+    margin-left: 57px;
+  }
+  
+  .ChatList ul li .MuiListItemAvatar-alignItemsFlexStart {
+    margin-top: 0;
+  }
