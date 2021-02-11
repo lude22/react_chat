@@ -3,6 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import firebase from './firebase/Firebase'
+
+if(process.env.NODE_ENV==='production'){
+  firebase.analytics();
+}
 
 ReactDOM.render(
   <React.StrictMode>
