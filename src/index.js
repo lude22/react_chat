@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import firebase from './firebase/Firebase'
+import firebase from './firebase/Firebase';
 
-if(process.env.NODE_ENV==='production'){
+// eslint-disable-next-line no-undef
+if (process.env.NODE_ENV === 'production') {
   firebase.analytics();
 }
 
