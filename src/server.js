@@ -5,7 +5,7 @@ const server = require('http').createServer(app);
 const io = require('socket.io')(server);
 const path = require('path');
 
-const portNumber = 7000;
+const portNumber = process.env.PORT || 7000;
 
 app.use(
   '/public',

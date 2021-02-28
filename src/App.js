@@ -21,7 +21,7 @@ import './App.css';
 //   }
 // }
 
-const socket = socketio.connect('http://localhost:7000');
+const socket = socketio.connect('https://reactchat-c4cae.web.app/');
 
 class App extends Component {
   constructor(props) {

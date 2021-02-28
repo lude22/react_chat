@@ -1,17 +1,17 @@
 import firebase from 'firebase/app';
 import 'firebase/analytics';
 
-// const config = {
-//   apiKey: process.env.REACT_APP_APP_KEY,
-//   authDomain: process.env.REACT_APP_AUTH_DOMAIN,
-//   databaseURL: process.env.REACT_APP_DATABASE_URL,
-//   projectId: process.env.REACT_APP_PROJECT_ID,
-//   storageBucket: process.env.REACT_APP_STORAGEBUCKET,
-//   messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
-//   appId: process.env.REACT_APP_APP_ID,
-//   measurementId: process.env.REACT_APP_MEASUREMENT_ID,
-// };
+const config = {
+  apiKey: 'AIzaSyCMzRAH0S3Ynrv4yz9eVvJd6i7TsU9ppIo',
+  authDomain: 'reactchat-c4cae.firebaseapp.com',
+  databaseURL: 'https://reactchat-c4cae.firebaseio.com',
+  projectId: 'reactchat-c4cae',
+  storageBucket: 'reactchat-c4cae.appspot.com',
+  messagingSenderId: '854480440930',
+  appId: '1:854480440930:web:de267eb8ac989eba930b3b',
+  measurementId: 'G-5DETCEE4JB',
+};
 
-// firebase.initializeApp(config);
+firebase.initializeApp(config);
 
 export default firebase;
